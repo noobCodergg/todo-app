@@ -6,7 +6,6 @@ require("dotenv").config();
 module.exports = {
   register: async (req, res) => {
     try {
-      console.log(req.body);
       const { username, email, password } = req.body;
 
       if ((!username, !email || !password)) {
@@ -81,7 +80,6 @@ module.exports = {
   },
 
   logout: async (req, res) => {
-    console.log("hi")
     res.clearCookie("auth_token", {
       httpOnly: true,
       secure: process.env.NODE_ENV === "production",
