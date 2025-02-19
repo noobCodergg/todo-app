@@ -68,7 +68,7 @@ const Register = () => {
         </form>
         <p className="mt-2 text-sm">
           Already have an account?{" "}
-          <Link to ='/'>Here!</Link>
+          <Link to ='/'>Log in Here!</Link>
         </p>
       </div>
     </div>
